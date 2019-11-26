@@ -10,7 +10,6 @@ node {
         withMaven (maven: maven3) {
             sh "mvn package"    }
   // you should add a test report here
-  node {
     try {
         stage('Test'){
             withMaven (maven: maven3) {
